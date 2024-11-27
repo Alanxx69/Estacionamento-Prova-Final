@@ -1,0 +1,348 @@
+/* Estilo Global */
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    color: #1F4E78; /* Azul real elegante */
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out; /* Suaviza todas as transições */
+}
+
+/* Janela Principal (QDialog e QMainWindow) */
+QDialog, QMainWindow {
+    background-color: #FFFFFF; /* Fundo branco */
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(31, 78, 120, 0.2); /* Sombra elegante */
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+QDialog:hover, QMainWindow:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(31, 78, 120, 0.3);
+
+}
+
+/* Labels */
+QLabel {
+    font-size: 16px;
+    color: #1F4E78;
+    opacity: 0.9;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+QLabel:hover {
+    opacity: 1.0;
+    transform: translateY(-2px); /* Leve elevação */
+}
+
+QLabel.section-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #153D5C; /* Azul mais escuro */
+    border-bottom: 2px solid #B0C4DE;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+/* Inputs (QLineEdit) */
+QLineEdit {
+    padding: 10px;
+    border: 1px solid #B0C4DE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #1F4E78;
+    transition: border 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease-in-out;
+}
+
+QLineEdit:hover {
+    border: 1px solid #2C6E91;
+    box-shadow: 0 3px 6px rgba(44, 110, 145, 0.2);
+}
+
+QLineEdit:focus {
+    border: 2px solid #1F4E78;
+    background-color: #EDF4FA;
+    box-shadow: 0 4px 8px rgba(31, 78, 120, 0.3);
+}
+
+/* Botões (QPushButton) */
+QPushButton {
+    padding: 10px 20px;
+    border: 2px solid #1F4E78;
+    border-radius: 8px;
+    background-color: #1F4E78;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #2C6E91;
+    border-color: #2C6E91;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(44, 110, 145, 0.2);
+}
+
+QPushButton:pressed {
+    background-color: #153D5C;
+    border-color: #153D5C;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(21, 61, 92, 0.3);
+}
+
+QPushButton:disabled {
+    background-color: #E2E8F0;
+    border-color: #CBD5E0;
+    color: #A0AEC0;
+    opacity: 0.6;
+}
+
+QPushButton.primary {
+    background-color: #2C6E91; /* Azul mais escuro */
+    border-color: #2C6E91;
+}
+
+QPushButton.primary:hover {
+    background-color: #1F4E78;
+    border-color: #1F4E78;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(31, 78, 120, 0.3);
+}
+
+QPushButton.secondary {
+    background-color: #F7F9FC;
+    color: #1F4E78;
+    border: 1px solid #B0C4DE;
+}
+
+QPushButton.secondary:hover {
+    background-color: #EDF4FA;
+    border-color: #1F4E78;
+}
+
+/* Combobox (QComboBox) */
+QComboBox {
+    padding: 10px;
+    border: 1px solid #B0C4DE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #1F4E78;
+    transition: border 0.4s ease, box-shadow 0.3s ease-in-out;
+}
+
+QComboBox:hover {
+    border: 1px solid #2C6E91;
+    box-shadow: 0 3px 6px rgba(44, 110, 145, 0.2);
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #B0C4DE;
+    background-color: #F7F9FC;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* Fundo do menu */
+    border: 1px solid #B0C4DE; /* Borda do menu */
+    selection-background-color: #EDF4FA; /* Fundo do item selecionado */
+    selection-color: #1F4E78; /* Cor do texto no item selecionado */
+    color: #1F4E78; /* Cor padrão do texto */
+}
+
+/* Data e Hora (QDateTimeEdit e QDateEdit) */
+QDateTimeEdit, QDateEdit {
+    padding: 8px;
+    border: 1px solid #B0C4DE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #1F4E78;
+    transition: border 0.4s ease, box-shadow 0.3s ease-in-out;
+}
+
+QDateTimeEdit:hover, QDateEdit:hover {
+    border: 1px solid #2C6E91;
+    box-shadow: 0 3px 6px rgba(44, 110, 145, 0.2);
+}
+
+QDateTimeEdit:focus, QDateEdit:focus {
+    border: 2px solid #1F4E78;
+    background-color: #EDF4FA;
+    box-shadow: 0 4px 8px rgba(31, 78, 120, 0.3);
+}
+
+/* Barras de Rolagem */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #F7F9FC;
+    border: 1px solid #B0C4DE;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle {
+    background: #1F4E78;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:hover {
+    background: #2C6E91;
+}
+
+/* Mensagens (QMessageBox) */
+QMessageBox {
+    background-color: #FFFFFF;
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(31, 78, 120, 0.3);
+}
+
+QMessageBox QLabel {
+    color: #1F4E78;
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: #1F4E78;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #2C6E91;
+    transform: translateY(-2px);
+}
+
+/* Tabelas (QTableWidget e Headers) */
+QTableWidget {
+    border: 1px solid #A0AEC0; /* Cinza suave */
+    background-color: #F7FAFC; /* Fundo levemente azulado */
+    gridline-color: #CBD5E0; /* Linhas da grade em cinza claro */
+    color: #2C5282; /* Texto em azul escuro */
+    alternate-background-color: #E2E8F0; /* Fundo alternado mais escuro */
+    selection-background-color: #2B6CB0; /* Azul mais vibrante para seleção */
+    selection-color: #FFFFFF; /* Texto branco para itens selecionados */
+    border-radius: 4px; /* Levemente arredondado apenas para o contorno da tabela */
+    padding: 10px;
+    font-size: 14px; /* Tamanho de fonte confortável */
+}
+
+/* Cabeçalhos da Tabela */
+QHeaderView::section {
+    background-color: #EDF4FA; /* Fundo azul claro */
+    color: #1F4E78; /* Texto azul elegante */
+    border: 1px solid #A0AEC0; /* Bordas cinza suaves */
+    padding: 8px; /* Espaçamento confortável */
+    font-weight: bold;
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilo do cabeçalho ao passar o mouse */
+QHeaderView::section:hover {
+    background-color: #DCEAF5; /* Azul mais escuro ao passar o mouse */
+    color: #1E3A8A; /* Texto em azul mais vibrante */
+}
+
+/* Efeito ao passar o mouse sobre os itens */
+QTableWidget::item:hover {
+    background-color: #E2E8F0; /* Fundo azul claro */
+    color: #2B6CB0; /* Texto azul mais vibrante */
+    border: none; /* Sem bordas extras */
+}
+
+/* Ajuste para cantos retos do botão de canto */
+QTableWidget::corner-button {
+    background-color: #EDF4FA; /* Mesmo fundo do cabeçalho */
+    border: 1px solid #A0AEC0; /* Mesma borda dos cabeçalhos */
+}
+
+/* Estilo de seleção */
+QTableWidget QTableCornerButton::section {
+    background-color: #EDF4FA; /* Azul claro */
+    border: none;
+}
+
+
+/* Mensagens de Sucesso e Erro */
+.success {
+    color: #1F4E78;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.success:hover {
+    color: #2C6E91;
+    transform: scale(1.05);
+}
+
+.error {
+    color: #E53E3E;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.error:hover {
+    transform: scale(1.1);
+    color: #C53030;
+}
+/* MenuBar (barra superior) */
+QMenuBar {
+    background-color: #F7F9FC; /* Fundo claro */
+    color: #1F4E78; /* Azul principal */
+    padding: 5px; /* Espaçamento */
+    border: 1px solid #B0C4DE; /* Borda elegante */
+    border-radius: 5px;
+}
+
+QMenuBar::item {
+    padding: 5px 15px; /* Espaçamento interno */
+    margin: 2px; /* Margem entre itens */
+    background-color: transparent; /* Fundo transparente por padrão */
+    color: #1F4E78; /* Cor do texto */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+QMenuBar::item:selected {
+    background-color: #EDF4FA; /* Fundo azul claro ao passar o mouse */
+    color: #1F4E78; /* Mantém o texto azul */
+}
+
+QMenuBar::item:pressed {
+    background-color: #2C6E91; /* Azul mais escuro ao clicar */
+    color: #FFFFFF; /* Texto branco */
+}
+
+/* Menus Dropdown */
+QMenu {
+    background-color: #FFFFFF; /* Fundo branco */
+    border: 1px solid #B0C4DE; /* Borda azul clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno */
+    color: #1F4E78; /* Texto azul */
+}
+
+QMenu::item {
+    background-color: transparent; /* Fundo transparente por padrão */
+    padding: 5px 15px; /* Espaçamento interno */
+    color: #1F4E78; /* Texto azul */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+QMenu::item:selected {
+    background-color: #EDF4FA; /* Fundo azul claro ao passar o mouse */
+    color: #1F4E78; /* Texto azul */
+}
+
+QMenu::item:pressed {
+    background-color: #2C6E91; /* Fundo azul escuro ao clicar */
+    color: #FFFFFF; /* Texto branco */
+}
+
+/* Separador no menu */
+QMenu::separator {
+    height: 1px; /* Espessura do separador */
+    background-color: #B0C4DE; /* Cor do separador */
+    margin: 4px 8px; /* Espaçamento ao redor do separador */
+}
+

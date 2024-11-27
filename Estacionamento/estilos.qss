@@ -1,0 +1,224 @@
+/* Estilo global para a janela principal */
+
+/* Estilo para botões */
+/* Estilo global para todos os botões */
+QPushButton {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#btnBuscar {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 2px 9px;  /* Ajuste o padding conforme necessário */
+    min-height: 35px;
+    max-height: 35px;
+}
+
+QPushButton:hover {
+    background-color: #3498db;
+}
+
+QPushButton:pressed {
+    background-color: #1f6390;
+}
+
+/* Estilo para campos de texto */
+QLineEdit {
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    padding: 5px;
+    color: #2c3e50;  /* Texto escuro para melhor legibilidade */
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Estilo para rótulos */
+QLabel {
+    color: black;
+    font-size: 14px;
+    padding: 2px;
+}
+
+/* Estilo para tabelas */
+QTableWidget {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    gridline-color: #7f8c8d;
+    font-size: 14px;
+}
+
+QHeaderView::section {
+    background-color: #2980b9;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+/* Estilo para células selecionadas na tabela */
+QTableWidget::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Estilo para o cabeçalho da tabela */
+QHeaderView::section {
+    background-color: #2980b9;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+}
+
+/* Estilo para QComboBox */
+QComboBox {
+    padding: 5px;
+    font-size: 14px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #2980b9;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2c3e50;
+    color: white;
+    border: 1px solid #2980b9;
+}
+
+/* Estilo para QDateEdit e QDateTimeEdit */
+QDateEdit, QDateTimeEdit {
+    background-color: #34495e;
+    color: white;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Estilo para a barra de menu */
+QMenuBar {
+    background-color: #2c3e50;
+    color: white;
+    border-bottom: 2px solid #2980b9;
+    font-size: 14px;
+}
+
+QMenuBar::item {
+    padding: 8px 20px;
+    background-color: transparent;
+    color: white;
+}
+
+QMenuBar::item:selected {
+    background-color: #2980b9;
+    color: #ecf0f1;
+}
+
+QMenu {
+    background-color: #34495e;
+    color: white;
+    border: 1px solid #2980b9;
+}
+
+QMenu::item {
+    padding: 8px 25px;
+    color: white;
+}
+
+QMenu::item:selected {
+    background-color: #2980b9;
+}
+
+/* Estilo para QMessageBox */
+QMessageBox {
+    color: black;
+    font-size: 14px;
+}
+
+QMessageBox QPushButton {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #3498db;
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #1f6390;
+}
+
+/* Estilo para QTabWidget */
+QTabWidget::pane {
+    border: 2px solid #2980b9;
+}
+
+QTabBar::tab {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: 1px solid #2980b9;
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background-color: #2980b9;
+    color: white;
+}
+
+QTabBar::tab:hover {
+    background-color: #3498db;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background-color: #2c3e50;
+    width: 15px;
+    margin: 15px 0 15px 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #2980b9;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background-color: #2c3e50;
+    height: 15px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* Estilo para QCheckBox */
+QCheckBox {
+    color: white;
+    font-size: 14px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: white;
+    border: 1px solid #2980b9;
+}
